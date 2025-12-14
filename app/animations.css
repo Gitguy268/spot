@@ -84,3 +84,28 @@
     outline-color: #ededed;
   }
 }
+
+/* Section container with subtle scroll reveal */
+.section-container {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+}
+
+.section-container.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced grid responsiveness */
+@media (min-width: 1024px) {
+  .grid-responsive-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .grid-responsive-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
