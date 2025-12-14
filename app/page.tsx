@@ -1,5 +1,7 @@
 import PhotoStories from '@/components/sections/PhotoStories';
 import TestimonialsAccordion from '@/components/sections/TestimonialsAccordion';
+import CelebsGallery from '@/components/sections/CelebsGallery';
+import SpotCollection from '@/components/sections/SpotCollection';
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <main className="w-full">
         <PhotoStories />
         <TestimonialsAccordion />
+        <CelebsGallery />
+        <SpotCollection />
       </main>
     </div>
   );
