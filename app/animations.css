@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Cubic-bezier easing for consistent animations */
+:root {
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-smooth-out: cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Parallax animation - moves at different speeds */
+@keyframes parallax-shift {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+/* Fade-in animation */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reduce motion - static fade instead of parallax */
+@media (prefers-reduced-motion: reduce) {
+  @keyframes parallax-shift {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.parallax-image {
+  animation: parallax-shift 3s ease-in-out infinite alternate;
+}
+
+.fade-in-animation {
+  animation: fade-in-up 0.8s var(--ease-smooth) forwards;
+}
+
+.section-fade-in {
+  animation: fade-in-up 0.6s var(--ease-smooth) forwards;
+}
+
+/* Accordion height animation */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s var(--ease-smooth);
+}
+
+.accordion-content[data-expanded="true"] {
+  max-height: 500px;
+}
+
+/* Focus styles */
+.focus-ring:focus-visible {
+  outline: 2px solid #171717;
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .focus-ring:focus-visible {
+    outline-color: #ededed;
+  }
+}
