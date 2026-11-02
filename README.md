@@ -1,5 +1,32 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+<!-- run-steps:start -->
+## Run it locally, step by step
+
+1. **Install [Node.js](https://nodejs.org) 20** or newer.
+
+2. **Get the code:**
+
+   ```sh
+   git clone https://github.com/Gitguy268/spot.git
+   cd spot
+   ```
+
+3. **Install the dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+4. **Start it:**
+
+   ```sh
+   npm run dev
+   ```
+
+5. **Open <http://localhost:3000/>** in your browser. Press `Ctrl+C` in the terminal to stop.
+<!-- run-steps:end -->
+
 ## Getting Started
 
 First, run the development server:
