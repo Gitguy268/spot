@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+<!-- live-links -->
+**Project page:** [gitguy268.github.io/spot](https://gitguy268.github.io/spot/) · [spot-snowy-six.vercel.app](https://spot-snowy-six.vercel.app)
+<!-- /live-links -->
+
 <!-- run-steps:start -->
 ## Run it locally, step by step
 
